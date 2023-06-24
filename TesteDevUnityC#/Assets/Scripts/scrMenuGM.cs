@@ -9,7 +9,7 @@ public class scrMenuGM : MonoBehaviour
     [SerializeField] GameObject _btnIniciar;
     public int count = 0;
     public int newCount;
-    private enum State { state1, state2, state3 }
+    private enum State { state1, state2, state3 } //enumerator que fiz para poder organizar as transições dos paineis do tutorial
     private State _state;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,7 @@ public class scrMenuGM : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //ao clicar no botão direito do mouse, vai fazer a transição dos paineis
         if (Input.GetKeyDown(KeyCode.Mouse0) && _state == State.state2)
         {
             if (count == 3)

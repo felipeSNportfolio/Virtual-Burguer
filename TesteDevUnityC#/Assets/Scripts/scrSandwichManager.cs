@@ -55,6 +55,7 @@ public class scrSandwichManager : MonoBehaviour
         {
             Time.timeScale = 1;
 
+            //cronometro
             if (_start == true)
             {
                 seconds += Time.deltaTime;
@@ -102,6 +103,7 @@ public class scrSandwichManager : MonoBehaviour
 
     public void Pedido() 
     {
+        //com um valor randomico que vai de 1 a 10, ele pega as informações dos scriptable objects e adiciona ao painel onde vai ser feito o pedido.
         pedido = Random.Range(1, 10);
         switch (pedido)
         {
@@ -207,12 +209,14 @@ public class scrSandwichManager : MonoBehaviour
         }
     }
 
+    //botões que adicionam os ingredientes
     public void btnSalada() { if (_ingredientes.Count <= limite && _end == false) { _ingredientes.Add("salada"); _txtIngredientes.text += "\n" + "- salada"; btnSFX.Play(); }  }
     public void btnHamburguer() { if (_ingredientes.Count <= limite && _end == false) { _ingredientes.Add("hamburguer"); _txtIngredientes.text += "\n" + "- hamburguer"; btnSFX.Play(); }  }
     public void btnTomate() { if (_ingredientes.Count <= limite && _end == false) { _ingredientes.Add("tomate"); _txtIngredientes.text += "\n" +"- tomate"; btnSFX.Play(); }  }
     public void btnPicles() { if (_ingredientes.Count <= limite && _end == false) { _ingredientes.Add("picles"); _txtIngredientes.text += "\n" +"- picles"; btnSFX.Play(); }  }
     public void btnQueijo() { if (_ingredientes.Count <= limite && _end == false) { _ingredientes.Add("queijo"); _txtIngredientes.text += "\n" + "- queijo"; btnSFX.Play(); }  }
 
+    //botão para limpar a lista de ingredientes
     public void btnVoltar() 
     {
         if (_end == false) 
@@ -222,6 +226,8 @@ public class scrSandwichManager : MonoBehaviour
             _txtIngredientes.text = "";
         } 
     }
+
+    //botão que confere se o pedido esta correto
     public void btnEntregar() 
     {
         if (_end == false)
@@ -245,6 +251,7 @@ public class scrSandwichManager : MonoBehaviour
         _pnlPause.SetActive(false);
     }
 
+    //metodo feito para validar as inforamções do pedido aos ingredientes selecionados pelo jogador
     public void ChecarPedido() 
     {
         if (_ingredientes[0] == _ingredientesPedido[0] && _ingredientes[1] == _ingredientesPedido[1] && _ingredientes[2] == _ingredientesPedido[2])
