@@ -1,0 +1,45 @@
+{
+	"$baseURI": "https://yal.cc/r/20/pixelfont/",
+	"$version": "1.0",
+	"in-glyphs": [
+		"ABCDEFGHIJKLMN",
+		"OPQRSTUVWXYZab",
+		"cdefghijklmnop",
+		"qrstuvwxyz0123",
+		"456789!¡?¿,.-=",
+		"+@#$%^&*()[]{}",
+		"<>/\\⁄|~¦:;'\"`_"
+	],
+	"glyph-color": "auto",
+	"in-kerning": [
+		""
+	],
+	"glyph-width": 11,
+	"glyph-height": 14,
+	"glyph-ofs-x": 1,
+	"glyph-ofs-y": 1,
+	"glyph-sep-x": 1,
+	"glyph-sep-y": 1,
+	"glyph-base-x": 0,
+	"glyph-baseline": 6,
+	"glyph-spacing": 1,
+	"font-is-mono": false,
+	"font-em-square": 1920,
+	"font-line-gap": 0,
+	"font-ascend": 768,
+	"font-descend": -1152,
+	"font-px-size": 128,
+	"font-name": "your world v1",
+	"font-author": "ToffeeHazel",
+	"font-copy": "(c)ToffeeHazel",
+	"font-version": "Version 1.0",
+	"font-desc": "Simple font for your world creation!",
+	"font-license": "You have the permission to use it in non-commercial and commercial project. But not for nft, ai, web3, blockchain, crypto.",
+	"font-license-url": "https://docs.google.com/document/d/1BI9dUTIX2E2YSvbwhniKL1-l4Euptb51yHI9N8RHb0Q/edit?usp=sharing",
+	"font-sample-text": "Hello world!",
+	"font-preview-text": [
+		"this is your day don't you think so?       THE QUICK BROWN FOX JUMPS OVER A LAZY DOG.",
+		"The quick brown fox jumps over a lazy dog.",
+		"0123456789"
+	]
+}
